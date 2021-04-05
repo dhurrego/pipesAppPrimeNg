@@ -6,12 +6,16 @@ import { AppComponent } from './app.component';
 // Modulos del Shared
 import { SharedModule } from './shared/shared.module';
 
+// Routing
+import { AppRouterModule } from './app-router.module';
+
 @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
     BrowserModule,
+    AppRouterModule,
     SharedModule
   ],
   providers: [],
