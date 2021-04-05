@@ -12,7 +12,6 @@ export class BasicosComponent {
   nombreUpper: string = 'DEIVID';
   nombreCompleto: string = 'DeIvId UrReGo';
 
-  constructor() { }
-
+  fecha: Date = new Date();
 
 }
