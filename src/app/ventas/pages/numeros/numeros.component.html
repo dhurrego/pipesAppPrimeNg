@@ -11,4 +11,14 @@
             {{ ventasNetas | number:'1.5-5' }}
         </p-card>
     </div>
+    <div class="p-col-4">
+        <p-card header="Ventas Brutas" subheader="del presente año">
+            {{ ventasNetas + 2000000 | currency:'COP':'symbol-narrow':'1.0-4' }}
+        </p-card>
+    </div>
+    <div class="p-col-4">
+        <p-card header="Ganancia porcentual" subheader="del presente año">
+            {{ porcentaje | percent:'1.2-2' }}
+        </p-card>
+    </div>
 </div>
