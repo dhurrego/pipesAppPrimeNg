@@ -12,14 +12,14 @@
     
     <div class="p-toolbar-group-right">
         <button pButton icon="pi pi-sort" label="Toogle mayúsculas" class="p-mr-1 p-button-help" (click)="esMayuscula = !esMayuscula"></button>
-        <button pButton icon="pi pi-sort" label="Por nombre" class="p-mr-1"></button>
-        <button pButton icon="pi pi-sort" label="Valores" class="p-mr-1 p-button-success"></button>
-        <button pButton icon="pi pi-sort" label="Por color" class="p-mr-1 p-button-warning"></button>
+        <button pButton icon="pi pi-sort" label="Por nombre" class="p-mr-1" (click)="ordenarPor('nombre')"></button>
+        <button pButton icon="pi pi-sort" label="Vuela" class="p-mr-1 p-button-success" (click)="ordenarPor('vuela')"></button>
+        <button pButton icon="pi pi-sort" label="Por color" class="p-mr-1 p-button-warning" (click)="ordenarPor('color')"></button>
     </div>
 </p-toolbar>
 <div class="p-grid">
     <div class="p-col p-mt-3">
-        <p-table [value]="heroes">
+        <p-table [value]="heroes | ordenar: valorOrdenar ">
             <ng-template pTemplate="header">
                 <tr>
                     <th>Nombre</th>

@@ -9,6 +9,8 @@ import { Color, Heroe } from '../../interfaces/ventas.interfaces';
 })
 export class OrdenarComponent {
 
+  valorOrdenar: string = 'sin valor';
+
   esMayuscula: boolean = true;
 
   heroes: Heroe[] = [
@@ -38,5 +40,9 @@ export class OrdenarComponent {
       color: Color.verde
     },
   ];
+
+  ordenarPor( ordenar: string ){
+    this.valorOrdenar = ordenar;
+  }
 
 }
