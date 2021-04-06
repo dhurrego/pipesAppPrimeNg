@@ -42,4 +42,12 @@ export class NoComunesComponent {
     //this.clientes.pop(); // Elimina el ultimo elemento del array
   }
 
+  // KeyValuePipe
+
+  persona = {
+    nombre: 'Deivid',
+    edad: 25,
+    direccion: 'En algun lugar'
+  }
+
 }
